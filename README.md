@@ -2,18 +2,14 @@
 
 # Recipe
 
-FROM codenvy/aspnet
+FROM [codenvy/aspnet](https://hub.docker.com/r/codenvy/aspnet/)
 
 # Commands
 
-Command #1 Download dependencies
-
-cd ${current.project.path} && dnu restore
-
-Command #2 Run
-
-dnx -p ${current.project.path}/project.json
-
+| #       | Description           | Command  |
+| :------------- |:-------------| :-----|
+| 1      | Download dependencies | `cd ${current.project.path} && dnu restore` |
+| 2      | Run      |   `dnx -p ${current.project.path}/project.json` |
 
 # Preview URL
 
