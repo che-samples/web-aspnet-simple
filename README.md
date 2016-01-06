@@ -8,13 +8,11 @@ FROM codenvy/aspnet
 
 Command #1 Download dependencies
 
-cd ${current.project.path}
-
-dnu restore
+cd ${current.project.path} && dnu restore
 
 Command #2 Run
 
-dnx -p project.json
+dnx -p ${current.project.path}/project.json
 
 
 # Preview URL
