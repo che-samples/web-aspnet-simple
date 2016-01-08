@@ -9,7 +9,7 @@ FROM [codenvy/aspnet](https://hub.docker.com/r/codenvy/aspnet/)
 | #       | Description           | Command  |
 | :------------- |:-------------| :-----|
 | 1      | Download dependencies | `cd ${current.project.path} && dnu restore` |
-| 2      | Run      |   `dnx -p ${current.project.path}/project.json` |
+| 2      | Run      |   `dnx -p ${current.project.path}/project.json web` |
 
 # Preview URL
 
