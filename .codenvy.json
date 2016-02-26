@@ -1,0 +1,69 @@
+{
+  "v": "4.0",
+  "workspace": {
+    "defaultEnv": "web-aspnet",
+    "environments": [
+      {
+        "name": "web-aspnet",
+        "machineConfigs": [
+          {
+            "limits": {
+              "ram": 1000
+            },
+            "name": "ws-machine",
+            "type": "docker",
+            "source": {
+              "location": "http://beta.codenvy.com/api/recipe/recipev4qbhnek0bmq9sry/script",
+              "type": "recipe"
+            },
+            "dev": true
+          }
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "links": [],
+        "name": "web-aspnet-simple",
+        "attributes": {
+          "language": [
+            "java"
+          ]
+        },
+        "type": "java",
+        "source": {
+          "location": "https://github.com/che-samples/web-aspnet-simple.git",
+          "type": "git",
+          "parameters": {}
+        },
+        "modules": [],
+        "path": "/web-aspnet-simple",
+        "problems": [],
+        "mixins": [
+          "git"
+        ]
+      }
+    ],
+    "name": "web-aspnet",
+    "attributes": {},
+    "commands": [
+      {
+        "commandLine": "cd ${current.project.path} && dnu restore",
+        "name": "web-aspnet-simple: update dependencies",
+        "attributes": {
+          "previewUrl": ""
+        },
+        "type": "custom"
+      },
+      {
+        "commandLine": "dnx -p ${current.project.path}/project.json web",
+        "name": "web-aspnet-simple: run",
+        "attributes": {
+          "previewUrl": "http://${server.port.5004}"
+        },
+        "type": "custom"
+      }
+    ],
+    "links": []
+  }
+}
