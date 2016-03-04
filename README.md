@@ -1,5 +1,9 @@
 # web-aspnet-simple
 
+# Developer Workspace
+
+[![Contribute](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=m9ylnmjtmzvmq99i)
+
 # Recipe
 
 FROM [codenvy/aspnet](https://hub.docker.com/r/codenvy/aspnet/)
@@ -14,7 +18,3 @@ FROM [codenvy/aspnet](https://hub.docker.com/r/codenvy/aspnet/)
 # Preview URL
 
 The app run on port 5004 in the container
-
-# Factory
-
-[![Contribute](https://codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=m9ylnmjtmzvmq99i)
